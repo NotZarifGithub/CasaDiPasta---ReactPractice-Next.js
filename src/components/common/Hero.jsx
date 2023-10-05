@@ -54,7 +54,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className='h-[calc(100vh-140px)] flex justify-center '>
+    <section className='h-[calc(100vh-140px)] flex justify-center'>
       
       {/* BACKGROUND IMAGES */}
       <div className="absolute z-0 w-full h-[calc(100vh-140px)] md:h-[calc(100vh-280px)] lg:h-[calc(100vh-260px)] md:top-0">
