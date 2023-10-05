@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Footer = () => {
   return (
-    <footer className="px-[20px]">
+    <footer className="px-[20px] ">
       <div>
         <div className="py-[20px]">
           <div className="py-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-7">

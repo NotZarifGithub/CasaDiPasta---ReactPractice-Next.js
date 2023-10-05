@@ -39,8 +39,8 @@ const Navbar = () => {
   ]
 
   return (
-    <header className="p-[10px] max-w-[1100px] mx-auto px-[20px]">
-      <div className="flex items-center justify-between">
+    <header className="p-[10px] px-[20px] z-20 relative border-b text-white bg-black">
+      <div className="flex items-center justify-between max-w-[1100px] mx-auto">
 
         {/* LOGO IMAGE */}
         <div className="relative h-[90px] w-[90px] md:w-[110px] lg:w-[130px]">
@@ -56,7 +56,7 @@ const Navbar = () => {
         {/* NAVBAR LINKS */}
         <div className="hidden text-sm font-semibold uppercase lg:text-base gap-7 md:flex">
           {navLinks.map(item => (
-            <Link key={item.id} href={item.path}>
+            <Link key={item.id} href={item.path} className="transition duration-300 ease-in-out hover:text-slate-700">
               {item.title}
             </Link>
           ))}
