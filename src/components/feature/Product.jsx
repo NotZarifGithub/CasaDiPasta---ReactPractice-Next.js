@@ -89,7 +89,7 @@ const Product = () => {
 
   return (
     <section>
-      <div className='flex flex-col items-center justify-center border-b  lg:py-[90px] text-white '>
+      <div className='flex flex-col items-center justify-center border-b py-[90px] text-white '>
 
         {/* Product CONTENT */}
         <div className="flex flex-col items-center justify-center p-[30px] lg:p-[40px] max-w-[500px] md:max-w-[600px] lg:items-center text-white py-[130px]">
@@ -98,7 +98,7 @@ const Product = () => {
           </h1>
 
           {/* Product DESCRIPTION */}
-          <div className="flex flex-col text-sm font-semibold text-white/70">
+          <div className="flex flex-col text-sm font-normal text-white/70">
             <p>
               Discover the essence of Italy through our mouthwatering dishes. Our menu is a journey through classic Italian 
               flavors, crafted with care and served with passion. Join us at Casa Di Pasta to savor the taste of Italy. Buon 
