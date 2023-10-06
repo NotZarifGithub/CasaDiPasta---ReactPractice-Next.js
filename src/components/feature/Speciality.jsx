@@ -25,7 +25,7 @@ const specialityData = [
 
 const Speciality = () => {
   return (
-    <section className='text-white bg-black border-b py-[20px]'>
+    <section className='text-white bg-black border-b py-[70px]'>
       <div className="flex flex-col justify-center md:flex-row">
 
         {/* "ABOUT" CONTENT  */}
