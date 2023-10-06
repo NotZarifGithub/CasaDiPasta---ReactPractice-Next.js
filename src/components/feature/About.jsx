@@ -10,7 +10,7 @@ const fuggles = Fuggles({
 const About = () => {
   return (
     <section>
-      <div className='flex flex-col items-center justify-center border-b lg:flex-row lg:py-[20px]'>
+      <div className='flex flex-col items-center justify-center border-b lg:flex-row lg:py-[90px]'>
 
         {/* ABOUT IMAGE */}
         <div className="relative w-full h-[500px] lg:w-[600px]">
