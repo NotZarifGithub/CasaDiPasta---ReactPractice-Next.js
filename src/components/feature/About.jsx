@@ -18,7 +18,7 @@ const About = () => {
         </div>
 
         {/* ABOUT CONTENT */}
-        <div className="flex flex-col items-center justify-center p-[30px] lg:p-[40px] max-w-[500px] md:max-w-[600px] lg:items-start text-white">
+        <div className="flex flex-col items-center justify-center p-[30px] lg:p-[40px] max-w-[500px] md:max-w-[600px] lg:items-start text-white py-[130px]">
           <h1 className="items-center mb-5 text-2xl font-bold leading-none uppercase lg:text-4xl md:text-3xl">
             <span className={`${fuggles.className} text-6xl capitalize`}>explore</span><br />Our journey
           </h1>
