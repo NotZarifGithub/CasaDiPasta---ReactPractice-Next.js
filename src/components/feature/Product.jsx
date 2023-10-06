@@ -133,7 +133,7 @@ const Product = () => {
                   <h1 className="text-xl font-medium py-[10px] uppercase">
                     {item.title}
                   </h1>
-                  <p className="text-sm text-white/70 text-start py-[10px]">
+                  <p className="text-sm text-white/70 text-start py-[10px] h-[200px]">
                     {item.description}
                   </p>
                   <div className="md:hidden">
@@ -150,7 +150,7 @@ const Product = () => {
           </div>
 
           {/* PRODUCT PRICE & BUTTON FOR MEDIUM - LARGE SCREEN */}
-          <div className="flex-row space-x-[150px] hidden md:flex ">
+          <div className="flex-row space-x-[150px] md:space-x-[110px] hidden md:flex ">
             {section.map(item => (
               <div className="flex flex-col gap-5 py-5">
                 {item.price}
