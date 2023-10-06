@@ -26,12 +26,18 @@ const specialityData = [
 const Speciality = () => {
   return (
     <section className='text-white bg-black border-b py-[20px]'>
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col justify-center md:flex-row">
+
+        {/* "ABOUT" CONTENT  */}
         {specialityData.map(item => (
-          <div className="flex flex-col items-center justify-center text-center p-[30px]">
+          <div className="flex flex-col items-center justify-center text-center p-[30px] max-w-[500px]">
+
+            {/* IMAGE */}
             <div className="relative w-[100px] h-[100px] border">
               <Image src={item.image} alt="" className="p-[20px]" fill/>
             </div>
+
+            {/* TITLE AND DESCRIPTION */}
             <div className="py-[10px]">
               <h1 className="text-xl py-[20px]">
                 {item.title}
