@@ -1,11 +1,13 @@
 import { Fuggles } from "next/font/google"
 import Card from "../ui/card"
 
+// FONT FOR CONTENT TITLE
 const fuggles = Fuggles({
   subsets: ['latin'],
   weight: ['400']
 })
 
+// CARD DATA 
 const cardData = [
   {
     id: 1,
