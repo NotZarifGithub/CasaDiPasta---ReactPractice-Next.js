@@ -20,7 +20,7 @@ const MainMenu = () => {
           </h1>
 
           {/* MAINMENU DESCRIPTION */}
-          <div className="flex flex-col text-sm font-semibold">
+          <div className="flex flex-col text-sm font-semibold text-white/70">
             <p>
               Welcome to Casa Di Pasta, where pasta is our passion. Our menu features a delightful selection of Italian pasta dishes, 
               prepared with love and the finest ingredients. From classic Spaghetti Bolognese to our house-special Penne alla Vodka, 

@@ -24,7 +24,7 @@ const About = () => {
           </h1>
 
           {/* ABOUT DESCRIPTION */}
-          <div className="flex flex-col text-sm font-semibold">
+          <div className="flex flex-col text-sm font-semibold text-white/70">
             <p>
               Welcome to our Italian restaurant, where pasta reigns supreme. At our culinary haven, we specialize in crafting 
               exquisite pasta dishes that transport you straight to the heart of Italy. Each plate is a symphony of flavors, 
