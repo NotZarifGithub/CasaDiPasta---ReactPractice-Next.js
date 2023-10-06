@@ -38,7 +38,7 @@ const MainMenu = () => {
 
         {/* ABOUT IMAGE */}
         <div className="relative w-full h-[500px] lg:w-[600px]">
-          <Image src={"/restaurant.jpg"} alt="" className="object-cover" fill/>
+          <Image src={"/restaurant2.jpg"} alt="" className="object-cover" fill/>
         </div>
       </div>
     </section>
