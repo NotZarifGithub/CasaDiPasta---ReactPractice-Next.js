@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-// BLOG CONTENT DATA
+// BLOG DATA
 const blogData = [
 	{
 		id: 1,
@@ -24,13 +24,12 @@ const blogData = [
 
 const Blog = () => {
   return (
-		<section className=''>
+		<section className='py-[70px]'>
       <div className="flex flex-col items-center justify-center"> 
-        
         <div className="flex flex-col items-center justify-center p-[30px] lg:p-[40px] max-w-[500px] md:max-w-[600px] lg:items-center text-white py-[130px]">
 
 					{/* BLOG TITLE */}
-          <h1 className="items-center mb-5 text-2xl font-bold leading-none uppercase lg:text-4xl md:text-3xl">
+          <h1 className="items-center mb-5 text-2xl font-bold leading-none uppercase md:text-3xl">
 						Recent from blog
           </h1>
 
@@ -43,7 +42,7 @@ const Blog = () => {
         </div>
 
 				{/* BLOG CONTENT */}
-				<div className="flex flex-col gap-14 md:gap-5 md:flex-row p-[60px]">
+				<div className="flex flex-col gap-14 md:gap-5 md:flex-row px-[60px] py-[40px]">
 					{blogData.map(item => (
 						<div className="max-w-[250px]">
 							<div className="relative w-full h-[200px]">
