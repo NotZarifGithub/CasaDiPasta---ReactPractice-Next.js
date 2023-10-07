@@ -218,8 +218,8 @@ const Menu = () => {
 							</h1>
 						</div>
 						<div className="p-[20px]">
-							{item.dish.map(dish => (
-								<div className="flex gap-4 py-[10px]">
+							{item.dish.map((dish, index) => (
+								<div key={index} className="flex gap-4 py-[10px]">
 
 									{/* MENU IMAGE */}
 									<div className="relative w-[50px] h-[50px]">

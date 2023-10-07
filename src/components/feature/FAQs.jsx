@@ -58,8 +58,8 @@ const FAQs = () => {
         <div className="max-w-[300px] md:max-w-[400px] lg:max-w-[500px] justify-center items-center block">
 
           {/* FAQs QUESTI0N & ANSWER */}
-          {FAQsData.map(item => (
-            <Accordion type="single" collapsible className='py-[10px]'>
+          {FAQsData.map((item, index) => (
+            <Accordion key={index} type="single" collapsible className='py-[10px]'>
               <AccordionItem value="item-1">
                 <AccordionTrigger>{item.question}</AccordionTrigger>
                 <AccordionContent>

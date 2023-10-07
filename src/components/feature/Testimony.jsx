@@ -58,11 +58,12 @@ const Testimony = () => {
 
         {/* CUSTOMER REVIEWS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:max-w-[1000px]">
-          {cardData.map(item => (
+          {cardData.map((item, index) => (
             <Card 
               description={item.description}
               image={item.image}
               name={item.name}
+              key={index}
             />
           ))}
         </div>

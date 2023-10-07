@@ -43,8 +43,8 @@ const Blog = () => {
 
 				{/* BLOG CONTENT */}
 				<div className="flex flex-col gap-14 md:gap-5 md:flex-row px-[60px] py-[40px]">
-					{blogData.map(item => (
-						<div className="max-w-[250px]">
+					{blogData.map((item, index) => (
+						<div key={index} className="max-w-[250px]">
 							<div className="relative w-full h-[200px]">
 								<Image src={item.image} alt="" className="object-cover" fill/>
 							</div>

@@ -26,8 +26,8 @@ const Showcase = () => {
       <div className="flex flex-col lg:flex-row">
 
 				{/* SHOWCASING IMAGES */}
-				{showcaseData.map(item => (
-					<div className="relative w-full h-[300px]">
+				{showcaseData.map((item, index) => (
+					<div key={index} className="relative w-full h-[300px]">
 						<Image src={item.image} alt="" className="object-cover" loading="lazy" fill/>
 					</div>
 				))}

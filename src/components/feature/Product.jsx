@@ -124,8 +124,8 @@ const Product = () => {
 
           {/* PRODUCT SECTION */}
           <div className="flex flex-col gap-14 md:gap-5 md:flex-row">
-            {section.map(item => (
-              <div className="max-w-[250px]">
+            {section.map((item, index) => (
+              <div key={index} className="max-w-[250px]">
                 <div className="relative w-full h-[200px]">
                   <Image src={item.image} alt="" className="object-cover" fill/>
                 </div>
@@ -151,8 +151,8 @@ const Product = () => {
 
           {/* PRODUCT PRICE & BUTTON FOR MEDIUM - LARGE SCREEN */}
           <div className="flex-row space-x-[150px] md:space-x-[110px] hidden md:flex ">
-            {section.map(item => (
-              <div className="flex flex-col gap-5 py-5">
+            {section.map((item, index) => (
+              <div key={index} className="flex flex-col gap-5 py-5">
                 {item.price}
                 <Button>
                   View in Menu
