@@ -4,11 +4,13 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "../ui/button"
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false)
-  
+  const router = useRouter()
+
   // NAVIGATION DATA
   const navLinks = [
     {
@@ -24,17 +26,17 @@ const Navbar = () => {
     {
       id: 3,
       title: 'about',
-      path: 'about',
+      path: '/about',
     },
     {
       id: 4,
       title: 'blog',
-      path: 'blog',
+      path: '/blog',
     },
     {
       id: 5,
       title: 'contact',
-      path: 'contact',
+      path: '/contact',
     },
   ]
 
@@ -56,7 +58,7 @@ const Navbar = () => {
         {/* NAVBAR LINKS */}
         <div className="hidden text-sm font-semibold uppercase lg:text-base gap-7 md:flex">
           {navLinks.map(item => (
-            <Link key={item.id} href={item.path} className="transition duration-300 ease-in-out hover:text-slate-700">
+            <Link key={item.id} href={item.path} className={`transition duration-300 ease-in-out hover:text-slate-700 ${router.pathname === item.path ? "text-slate-700" : ""}`}>
               {item.title}
             </Link>
           ))}

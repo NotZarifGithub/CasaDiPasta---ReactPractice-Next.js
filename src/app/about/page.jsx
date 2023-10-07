@@ -1,8 +1,12 @@
-import React from 'react'
+import Hero from "@/components/common/Hero"
+import About from "@/components/feature/About"
 
 const aboutPage = () => {
   return (
-    <div>aboutPage</div>
+    <main className='bg-[url("/background.jpg")]'>
+      <Hero heropagetitle={"about us "} image={"/pasta2.jpg"}/>
+      <About />
+    </main>
   )
 }
 

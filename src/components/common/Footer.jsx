@@ -3,8 +3,8 @@ import Image from "next/image"
 
 const Footer = () => {
   return (
-    <footer className="px-[20px] bg-black text-white">
-      <div>
+    <footer className="px-[20px] bg-black text-white border-t">
+      <div className="max-w-[1100px] mx-auto">
         <div className="py-[20px]">
           <div className="py-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-7">
 

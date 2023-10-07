@@ -1,9 +1,15 @@
-import React from 'react'
+import ShopInfo from "@/components/common/ShopInfo"
+import Hero from "../../components/common/Hero"
+import Menu from "./Menu"
 
-const menuPage = () => {
+const page = () => {
   return (
-    <div>menuPage</div>
+    <main className='bg-[url("/background.jpg")]'>
+      <Hero heropagetitle={"our menu"} image={"/dessertsmenu.jpg"}/>
+      <ShopInfo />
+      <Menu />
+    </main>
   )
 }
 
-export default menuPage
+export default page
