@@ -28,7 +28,7 @@ const Showcase = () => {
 				{/* SHOWCASING IMAGES */}
 				{showcaseData.map(item => (
 					<div className="relative w-full h-[300px]">
-						<Image src={item.image} alt="" className="object-cover" fill/>
+						<Image src={item.image} alt="" className="object-cover" loading="lazy" fill/>
 					</div>
 				))}
       </div>
