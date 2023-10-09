@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={monstserrat.className}>
         <Navbar />
-        {children}
+          {children}
         <Footer />
       </body>
     </html>
