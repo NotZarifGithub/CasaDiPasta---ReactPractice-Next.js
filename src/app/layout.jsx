@@ -2,6 +2,7 @@ import Navbar from '@/components/common/Navbar'
 import './globals.css'
 import { Montserrat } from 'next/font/google'
 import Footer from '@/components/common/Footer'
+import Head from 'next/head'
 
 const monstserrat = Montserrat({ subsets: ['latin'] })
 
@@ -14,9 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
+      </Head>
       <body className={monstserrat.className}>
         <Navbar />
           {children}
