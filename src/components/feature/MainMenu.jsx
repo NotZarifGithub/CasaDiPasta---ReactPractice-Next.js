@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Fuggles } from "next/font/google"
-import  Button  from "../ui/Button"
+import  Button  from "../ui/button"
 import Link from 'next/link';
 
 const fuggles = Fuggles({ 

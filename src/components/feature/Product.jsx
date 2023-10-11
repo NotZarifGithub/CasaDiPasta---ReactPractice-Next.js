@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { Fuggles } from "next/font/google"
 import Image from "next/image"
-import  Button  from "../ui/Button"
+import  Button  from "../ui/button"
 import { useState } from "react"
 
 const fuggles = Fuggles({

@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import Button from "../ui/Button"
+import Button from "../ui/button"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 
