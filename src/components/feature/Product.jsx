@@ -167,9 +167,9 @@ const Product = () => {
           </div>
 
           {/* PRODUCT PRICE & BUTTON FOR MEDIUM - LARGE SCREEN */}
-          <div className="flex-row space-x-[150px] md:space-x-[110px] hidden md:flex ">
+          <div className="flex-row space-x-[150px] md:space-x-[150px] hidden md:flex ">
             {section.map((item, index) => (
-              <div key={index} className="flex flex-col gap-5 py-5">
+              <div key={index} className="flex flex-col py-5 gap-7">
                 {item.price}
                 <Link href="/menu">
                   <Button 
