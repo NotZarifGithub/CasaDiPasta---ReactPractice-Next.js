@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "../ui/button"
+import Button from "../ui/Button"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 
@@ -65,12 +65,14 @@ const Navbar = () => {
         </div>
 
         {/* BUTTON--SHADCN-UI */}
-        <div className="hidden md:inline-block">
-          <Button className="mr-[30px]">
-            <Link href="/">
-              Book a table
-            </Link>
-          </Button>
+        <div className="hidden md:flex">
+          <Link href="#booking">
+            <Button 
+              text={"book a table"}
+              bgcolor={"bg-white"}
+              textcolor={"text-black"}
+            />
+          </Link>
         </div>
         
         {/* HAMBURGER */}
@@ -101,11 +103,10 @@ const Navbar = () => {
               {item.title}
             </Link>
           ))}
-          <Button className="">
-            <Link href="/" onClick={() => setIsOpen(false)}>
-              Book a table
-            </Link>
-          </Button>
+          <Link href="#booking" onClick={() => setIsOpen(false)}>
+            <Button className="w-full" text={"Book a table"} bgcolor={"bg-white"} textcolor={"text-black"}>
+            </Button>
+          </Link>
         </div>
       )}
     </header>
