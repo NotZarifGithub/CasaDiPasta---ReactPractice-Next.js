@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Fuggles } from "next/font/google"
-import { Button } from "../ui/button"
+import  Button  from "../ui/Button"
 import Link from 'next/link';
 
 const fuggles = Fuggles({ 
@@ -29,11 +29,13 @@ const MainMenu = () => {
           </div>
 
           {/* BUTTON--SHADCN-UI */}
-          <Button className='mt-8'>
-            <Link href="/">
-              View Menu
-            </Link>
-          </Button>
+          <Link href="/menu">
+            <Button 
+              text={"view menu"}
+              bgcolor={"bg-black"}
+              textcolor={"text-white"}
+            />
+          </Link>
         </div>
 
         {/* ABOUT IMAGE */}

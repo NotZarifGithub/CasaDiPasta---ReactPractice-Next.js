@@ -1,8 +1,9 @@
 "use client"
 
+import Link from "next/link"
 import { Fuggles } from "next/font/google"
 import Image from "next/image"
-import { Button } from "../ui/button"
+import  Button  from "../ui/Button"
 import { useState } from "react"
 
 const fuggles = Fuggles({
@@ -111,15 +112,27 @@ const Product = () => {
 
           {/* CONFIGURING PRODUCT BUTTON */}
           <div className="flex gap-4 py-[50px]">
-            <Button onClick={() => setSection(productDataDish)}>
-              Main Dish
-            </Button>
-            <Button onClick={() => setSection(productDataDrink)}>
-              Drinks
-            </Button>
-            <Button onClick={() => setSection(productDataDesserts)}>
-              Desserts
-            </Button>
+            <button  onClick={() => setSection(productDataDish)}>
+              <Button 
+                text={"Main Dish"}
+                bgcolor={"bg-black"}
+                textcolor={"text-white"}
+              />
+            </button>
+            <button  onClick={() => setSection(productDataDrink)}>
+              <Button 
+                text={"Drinks"}
+                bgcolor={"bg-black"}
+                textcolor={"text-white"}
+              />
+            </button>
+            <button  onClick={() => setSection(productDataDesserts)}>
+              <Button 
+                text={"Desserts"}
+                bgcolor={"bg-black"}
+                textcolor={"text-white"}
+              />
+            </button>
           </div>
 
           {/* PRODUCT SECTION */}
@@ -141,9 +154,13 @@ const Product = () => {
                   </div>
                 </div>
                 <div className="md:hidden">
-                  <Button>
-                    View in Menu
-                  </Button>
+                <Link href="/menu">
+                  <Button 
+                    text={"view menu"}
+                    bgcolor={"bg-black"}
+                    textcolor={"text-white"}
+                  />
+                </Link>
                 </div>
               </div>
             ))}
@@ -154,9 +171,13 @@ const Product = () => {
             {section.map((item, index) => (
               <div key={index} className="flex flex-col gap-5 py-5">
                 {item.price}
-                <Button>
-                  View in Menu
-                </Button>
+                <Link href="/menu">
+                  <Button 
+                    text={"view menu"}
+                    bgcolor={"bg-black"}
+                    textcolor={"text-white"}
+                  />
+                </Link>
               </div>
             ))}
           </div>

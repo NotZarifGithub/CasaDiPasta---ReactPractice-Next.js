@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Fuggles } from "next/font/google"
-import { Button } from "@/components/ui/button"
+import Button from "../ui/button"
 import Link from "next/link"
 
 // FONT FOR 'WELCOME' TEXT
@@ -26,16 +26,20 @@ const hero = ({heropagetitle, image}) => {
 
         {/* BUTTON--SHADCN  -UI */}
         <div className="flex gap-4">
-          <Button>
-            <Link href="/">
-              Book a table
-            </Link>
-          </Button>
-          <Button>
-            <Link href="/">
-              View Menu
-            </Link>
-          </Button>
+          <Link href="/menu">
+            <Button 
+              text={"view menu"}
+              bgcolor={"bg-black"}
+              textcolor={"text-white"}
+            />
+          </Link>
+          <Link href="#booking">
+            <Button 
+              text={"book a table"}
+              bgcolor={"bg-black"}
+              textcolor={"text-white"}
+            />
+          </Link>
         </div>
       </div>
     </section>

@@ -29,7 +29,7 @@ const Speciality = () => {
       <div className="flex flex-col justify-center md:flex-row">
 
         {/* "ABOUT" CONTENT  */}
-        {specialityData.map((index, item) => (
+        {specialityData.map((item, index) => (
           <div key={index} className="flex flex-col items-center justify-center text-center p-[30px] max-w-[500px]">
 
             {/* IMAGE */}

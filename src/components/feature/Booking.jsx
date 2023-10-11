@@ -2,7 +2,7 @@ import GoogleMapsLoader from './GoogleMapsLoader';
 
 const Booking = () => {
   return (
-    <section className='md:py-[100px]'>
+    <section className='md:py-[100px]' id='booking'>
       <div className='max-w-[700px] mx-auto flex flex-col'>
 
         {/* GOOGLE MAPS */}
