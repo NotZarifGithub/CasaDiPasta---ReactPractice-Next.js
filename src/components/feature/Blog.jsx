@@ -24,7 +24,7 @@ const blogData = [
 
 const Blog = () => {
   return (
-		<section className='py-[70px]'>
+		<section className='py-[70px] border-b'>
       <div className="flex flex-col items-center justify-center"> 
         <div className="flex flex-col items-center justify-center p-[30px] lg:p-[40px] max-w-[500px] md:max-w-[600px] lg:items-center text-white py-[130px]">
 
@@ -34,7 +34,7 @@ const Blog = () => {
           </h1>
 
           {/* BLOG DESCRIPTION */}
-          <div className="flex flex-col text-sm font-semibold text-white/70 text-center">
+          <div className="flex flex-col text-sm font-semibold text-center text-white/70">
             <p>
 							We're thrilled to have you here on our blog page. This is your go-to spot for all things interesting and informative. From helpful tips to entertaining stories, we've got it all covered. Explore, learn, and enjoy your time with us!
             </p>
