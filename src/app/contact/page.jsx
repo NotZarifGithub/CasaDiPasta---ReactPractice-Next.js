@@ -1,16 +1,17 @@
 import Hero from "@/components/common/Hero"
+import Booking from "@/components/feature/Booking"
 import GoogleMapsLoader from "@/components/feature/GoogleMapsLoader"
 
 const ContactPage = () => {
   return (
-    <main className='bg-black'>
+    <main className='bg-[url("/background.jpg")]'>
 
       {/* HERO */}
       <Hero heropagetitle={"Contact"}  image={"/drinksmenu.jpg"}/>
-      <div className="flex flex-col justify-center items-center border-t">
+      <div className="flex flex-col items-center justify-center bg-black border-y">
 
         {/* CONTACT INFORMATION */}
-        <div className="text-white max-w-[400px] p-[60px] text-sm flex flex-col gap-9 justify-center items-center">
+        <div className=" text-white max-w-[400px] p-[60px] text-sm flex flex-col gap-9 justify-center items-center">
           <h1 className="text-2xl font-semibold text-center">
             Contact Information
           </h1>
@@ -25,6 +26,7 @@ const ContactPage = () => {
           </p>
         </div>
       </div>
+      <Booking />
       <div>
       </div>
     </main>
