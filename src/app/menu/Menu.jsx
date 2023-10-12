@@ -207,7 +207,7 @@ const Menu = () => {
 		<section>
 
 			{/* MAIN CONTENT */}
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white md:p-[30px] lg:p-[80px]">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-white md:p-[30px] lg:p-[80px] border-b">
 				{menuData.map((item, index) => (
 					<div key={index} className="py-[10px]">
 
